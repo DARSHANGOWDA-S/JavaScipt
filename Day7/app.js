@@ -1,67 +1,58 @@
-let a1=[1,2,3,4,5];
-let a2=[6,7,8,9,10];
-
-// let a3=a1.concat(a2);
-let result=a1.concat(a2);
-console.log(result);
-
-// let result=[...a1,...a2];
-// console.log(result);
-
-
-let arr=[1,2,3,4,5,6,7,8,9,10];
-console.log(arr.slice(2,5));
-console.log(arr.slice(3,5));
-console.log(arr);
-
-console.log(arr.slice(4));
-console.log(arr.slice(0,4));
-console.log(arr.slice(-4));
-console.log(arr.slice(-7,-3));
-console.log(arr.slice(-3,-1));
-
-
 let str1="Hello";
-console.log(str2);
-
-let str2= new String("Hello");
-console.log(str2);
-
-console.log(str1.length);
-console.log(str2.length);
-console.log(str1[0]);
-console.log(str2[0]);
-console.log(str1.charAt(0));
-console.log(str2.charAt(0));
-console.log(str1.toUpperCase());
-console.log(str2.toUpperCase());
 console.log(str1);
+console.log(typeof str1);//string
+
+let str2=new String("Hello")
 console.log(str2);
+console.log(typeof str2);//object
 
-let str3=str1.concat(" World");
-console.log(str1);
-console.log(str3);  
-let str4=str2.concat(" World");
-console.log(str2);
-console.log(str4);
-console.log(str1.indexOf('o'));
-console.log(str2.indexOf('o'));
-console.log(str1.lastIndexOf('o'));
-console.log(str2.lastIndexOf('o'));
-console.log(str1.indexOf('l',3));
-console.log(str2.indexOf('l',3));
-console.log(str1.startsWith('H'));
-console.log(str2.startsWith('H'));
-console.log(str1.endsWith('o'));
-console.log(str2.endsWith('o'));
-console.log(str1.includes('lo'));
+console.log(str1==str2);//true
+console.log(str1==str2);//false
+
+let str8="welcome";
+console.log(str8.length);//7
+
+console.log(str[0]);//w
+console.log(str[8]);//undefined
+console.log(str[str.length-1]);//0
+
+console.log("******"); 0
 
 
-let str="welcome"
-console.log(str.length);
-console.log(str[0]);
-console.log(str[8]);
+for(let i=0;i<str.length;i++){
+    console.log(str[i]);
+}
+
+console.log("*****");
+
+for(let ch of str){
+    console.log(ch);
+}
+
+console.log(str[8]);//undefined
+console.log(str[str.length])
+
+let a=10;
+let b=20;
+let sum=a+b;
+console.log("the sum of "+a+" and "+b+" is "+sum);
+console.log(`the sum of ${a} and ${b} is ${sum}`);
 
 
-console.log('');
+let str="welome"
+console.log(str.slice(0,4));
+console.log(str.slice(3));
+console.log(str.slice(-4));
 
+
+let card="1234-5678-9876-5432";
+let last4=card.slice(-4);
+console.log(last4);
+
+let maskedCard=last4.padStart(card.length,"*");
+console.log(maskedCard);
+
+let phone="1234567890";
+let last3=phone.slice(0,3);
+let maskedPhone=last3.padEnd(phone.length,"*");
+console.log(maskedPhone);
