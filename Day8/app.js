@@ -32,3 +32,20 @@ console.log(reverseSentence);
 
 
 
+//trim()
+let str3="   Hello World   "
+console.log(str3.length);
+console.log(str3.trim().length);
+console.log(str3.trimStart().length);
+console.log(str3.trimEnd().length);
+console.log(str3.trimStart());
+console.log(str3.trimEnd());    
+console.log(str3.trim());
+console.log(str3);
+console.log(str3.trim().toUpperCase());
+console.log(str3.trim().toLowerCase());
+console.log(str3.trim().charAt(0));
+console.log(str3.trim().charAt(str3.trim().length-1));
+console.log(str3.trim().substring(1,4));
+console.log(str3.trim().slice(1,4));
+console.log(str3.trim().slice(-3));
